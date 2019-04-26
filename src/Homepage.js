@@ -6,7 +6,7 @@ import Footer from '../src/footer/Footer';
 class Homepage extends Component{
     render(){
         return(
-            <div className='container'>
+            <div className='container-fluid'>
                 <Header />
                 <Container />
                 <Footer />

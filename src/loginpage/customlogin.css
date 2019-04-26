@@ -1,4 +1,4 @@
-div.container{
+div.login{
      position: fixed;
      top: 50%;
      left: 50%;
@@ -16,3 +16,30 @@ div.container{
     text-align: center;
     font-family: none;
 }
+
+
+.sidenav {
+    margin-top: 50px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav .nav-link {
+    padding: 6px 20px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4438f1;
+    display: block;
+    margin-top: 20px; 
+  }
+  
+  .sidenav Link:hover {
+    color: #f1f1f1;
+  }

@@ -25,7 +25,7 @@ class Login extends Component{
 
     render(){
         return(
-            <div className='container'>
+            <div className='container login'>
                 <div className='row'>
                     <div className='col-md-3'></div>
                     <div className='col-md-6'>
