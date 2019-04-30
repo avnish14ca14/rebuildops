@@ -4,10 +4,16 @@ import Rightpanel from '../container/rightpanel/Rightpanel';
 
 class Container extends Component{
     render(){
+        // const results = this.props.result;
+        // const res_colum = this.props.res_colum;
         return(
             <div className='row'>
-                <Leftpanel />
-                <Rightpanel />
+                <div className='col-lg-3'>
+                    <Leftpanel />
+                    </div>
+                    <div className='col-lg-3'>
+                    <Rightpanel/>
+                </div>
             </div>
         )
     }

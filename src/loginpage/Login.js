@@ -20,7 +20,7 @@ class Login extends Component{
     formSubmit(e){
         e.preventDefault();
         this.props.history.push('/homepage');
-        console.log(this.state.username, this.state.password);
+        
     }
 
     render(){
