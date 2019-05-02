@@ -2,30 +2,26 @@ import React, { Component } from 'react'
 import Rightpanel from '/Users/sayedali/Pictures/login_reg/rebuildops/src/container/rightpanel/Rightpanel'
 import { FetchTable } from '/Users/sayedali/Pictures/login_reg/rebuildops/src/ApiCall'
 
-class Excom extends Component {
-
-
-    constructor(props) {
+class DatabaseInformation extends Component {
+constructor(props) {
       super(props)
     
       this.state = {
          result: [],
-         results: [],
-         table_name: ''
 
       }
     }
 
-componentWillMount(){
+componentDidMount(){
     
     this.setState(() => {
-        const tablename = this.props.match.params.tablename
-        FetchTable(tablename).then(res => {
+        
+        FetchTable('database_information').then(res => {
                 // console.log(res)
                 if (res){
-                    // this.setState({
-                    //     // result: res.data
-                    // })
+                    this.setState({
+                        result: res.data
+                    })
                     // console.log(res.data)
                 }
             })
@@ -38,15 +34,15 @@ componentWillMount(){
   
     
   render() {
-    // const { result } = this.state
+    const { result } = this.state
     // console.log(result)
 
     return (
       <div>
-       {this.state.result ? <Rightpanel result={this.state.result} />  : ''}
+       {result ? <Rightpanel result={result} />  : ''}
       </div>
     )
   }
 }
 
-export default Excom
+export default DatabaseInformation;

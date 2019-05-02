@@ -50,36 +50,51 @@ div.login{
     top: 0;
     left: 0;
     background-color: lightgrey;
-    /* overflow-x: hidden; */
-    padding-top: 0;
-    overflow-y:scroll; 
+  overflow-y:scroll; 
+    margin-left:0
   }
   
-
-.sidenav .ulclass{
-  margin-top: 0;
-  padding: 6px 0 0 0px;
-  height: 23px;
-}
-  .sidenav .nav-link {
-    padding: 0px 0 0 0px;
-    /* padding-top:50px; */
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    /* display: block; */
-    overflow: scroll;
+.sidenav .nav-link {
+  padding: 0px 0 0 0px;
+  /* padding-top:50px; */
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  /* display: block; */
+  overflow: scroll;
     
-  }
+}
   
-  .sidenav Link:hover {
-    color: #7a2424;
-  }
+.sidenav Link:hover {
+  color: #7a2424;
+}
 
 
-  .excom{
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%)
-  }
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:1000px;
+  overflow:auto;  
+  margin-top:150px;
+  width:1500px;
+}
+#table-wrapper table {
+  width:100%;
+  border: 1px solid;
+
+}
+#table-wrapper table * {
+  background:yellow;
+  color:black;
+}
+#table-wrapper table thead th .text {
+  position:fixed;   
+  top:-10px;
+  z-index:2;
+  /* height:2px; */
+  width:100%;
+  border:1px solid red;
+}
+
+
